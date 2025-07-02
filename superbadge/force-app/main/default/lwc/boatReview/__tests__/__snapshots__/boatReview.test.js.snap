@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`c-boat-review Wire Should show boat reviews 1`] = `
+<c-boat-review
+  __lwc_scope_token__=""
+>
+  #shadow-root(open)
+    <!---->
+    <div
+      __lwc_scope_token__=""
+      class="slds-feed, reviews-style, slds-is-relative, slds-scrollable_y"
+    >
+      <ul
+        __lwc_scope_token__=""
+        class="slds-feed__list"
+      >
+        <li
+          __lwc_scope_token__=""
+          class="slds-feed__item slds-m-around_small"
+        >
+          <article
+            __lwc_scope_token__=""
+            class="slds-post"
+          >
+            <header
+              __lwc_scope_token__=""
+              class="slds-post__header slds-media"
+            >
+              <div
+                __lwc_scope_token__=""
+                class="slds-media__figure"
+              >
+                <lightning-avatar
+                  __lwc_scope_token__=""
+                >
+                  #shadow-root(open)
+                </lightning-avatar>
+              </div>
+              <div
+                __lwc_scope_token__=""
+                class="slds-media__body"
+              >
+                <div
+                  __lwc_scope_token__=""
+                  class="slds-grid slds-grid_align-spread slds-has-flexi-truncate"
+                >
+                  <p
+                    __lwc_scope_token__=""
+                  >
+                    <span
+                      __lwc_scope_token__=""
+                    >
+                      xyz
+                    </span>
+                    --
+                    <span
+                      __lwc_scope_token__=""
+                    >
+                      companyName
+                    </span>
+                  </p>
+                </div>
+                <p
+                  __lwc_scope_token__=""
+                  class="slds-text-body_small"
+                >
+                  <lightning-formatted-date-time
+                    __lwc_scope_token__=""
+                  >
+                    #shadow-root(open)
+                  </lightning-formatted-date-time>
+                </p>
+              </div>
+            </header>
+            <div
+              __lwc_scope_token__=""
+              class="slds-text-longform"
+            >
+              <p
+                __lwc_scope_token__=""
+                class="slds-text-title_caps"
+              >
+                boatName
+              </p>
+              commoneeeeeeeeeent
+            </div>
+            <c-five-star-rating
+              __lwc_scope_token__=""
+            >
+              #shadow-root(open)
+            </c-five-star-rating>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!---->
+</c-boat-review>
+`;

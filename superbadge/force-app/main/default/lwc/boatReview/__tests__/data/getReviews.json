@@ -1,0 +1,12 @@
+[{
+	"Id":"123",
+	"Name":"boatName",
+	"Comment__c":"commoneeeeeeeeeent",
+	"Rating__c":"5",
+	"CreatedBy":{
+		"SmallPhotoUrl":"image",
+		"Name": "xyz",
+		"CompanyName":"companyName"
+	},
+	"CreatedDate":"01072025"
+}]

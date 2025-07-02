@@ -1,0 +1,54 @@
+<template>
+<lightning-card>
+	<!-- lightning data service code -->
+	<!-- <lightning-record-edit-form> using boatReviewObject -->
+		<lightning-record-edit-form
+			object-api-name={boatReviewObject}
+			onsuccess={handleSuccess}
+		>
+		<lightning-input-field
+			field-name={boatField}
+			value={boatId}
+			disabled
+		></lightning-input-field>
+
+		<!-- <input type="hidden" value={boatId}> -->
+
+		<lightning-layout multiple-rows vertical-align="start">
+			<lightning-layout-item size="8" padding="horizontal-small">
+				<label class="slds-form-element__label" for="record-name">Review Subject</label>
+			<div class="slds-form-element">
+				<!-- review subject field code using nameField -->
+				<lightning-input-field field-name={nameField} value={name}> </lightning-input-field>
+			</div>
+			</lightning-layout-item>
+			<lightning-layout-item size="4" padding="horizontal-small">
+			<div class="slds-form-element">
+				<label class="slds-form-element__label" for="record-name">Rating</label>
+				<div class="slds-form-element__control">
+				<!-- add five star rating component -->
+				 <c-five-star-rating read-only={readOnly} value={rating} onratingchange={handleRatingChanged}></c-five-star-rating>
+				</div>
+			</div>
+			</lightning-layout-item>
+			<lightning-layout-item padding="horizontal-small">
+				<!-- review comment field code using commentField -->
+				 <lightning-textarea
+				 label="Comment"
+				 name="comment"
+				 value={comment}
+				 onchange={handleChange}
+				 required
+				 >
+				 </lightning-textarea>
+			</lightning-layout-item>
+	  </lightning-layout>
+	  <div class="slds-align_absolute-center" style="margin-top: 5px">
+			 <!-- add submit button -->
+			 <lightning-button icon-name="utility:save" variant="brand" onclick={handleSubmit} label="Submit">
+			</lightning-button>
+	  </div>
+	</lightning-record-edit-form>
+</lightning-card>
+  </template>
+  

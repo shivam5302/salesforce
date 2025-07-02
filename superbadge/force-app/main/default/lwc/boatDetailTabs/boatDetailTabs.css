@@ -1,0 +1,9 @@
+.inline-field lightning-output-field{
+    display: inline-block;
+
+}
+
+.inline-field lightning-output-field span{
+    display: inline-block;
+
+}

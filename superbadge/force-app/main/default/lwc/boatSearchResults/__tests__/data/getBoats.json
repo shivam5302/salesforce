@@ -1,0 +1,22 @@
+[
+	{
+		"Id": "a029H000002vVkHQAU",
+		"Name": "Sounder",
+		"Description__c": "Life without a boat is not fun. I love this boat.",
+		"Geolocation__Latitude__s": 47.630068,
+		"Geolocation__Longitude__s": -122.335491,
+		"Picture__c": "/resource/PleasureBoats/pleasureboat10.jpg",
+		"Contact__c": "0039H00000D2YW7QAN",
+		"BoatType__c": "a019H00000IEOBSQA5",
+		"Length__c": 18,
+		"Price__c": 359000,
+		"Contact__r": {
+			"Name": "Jose Weimar",
+			"Id": "0039H00000D2YW7QAN"
+		},
+		"BoatType__r": {
+			"Name": "Pleasure Boat",
+			"Id": "a019H00000IEOBSQA5"
+		}
+	}
+]

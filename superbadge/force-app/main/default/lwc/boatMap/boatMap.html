@@ -1,0 +1,20 @@
+<template>
+  <lightning-card title="Current Boat Location" icon-name="action:map">
+    <template lwc:if={error}>
+      <div class="slds-theme_error">
+        <lightning-icon
+          icon-name="utility:error"
+          variant="inverse"
+          size="small"
+        ></lightning-icon>
+        <span class="slds-p-left_xx-small">Some error message</span>
+      </div>
+    </template>
+    <template lwc:elseif={showMap}>
+      <lightning-map map-markers={mapMarkers} zoom-level="10"></lightning-map>
+    </template>
+    <template lwc:else>
+      <span class="slds-align_absolute-center">{selectBoatLabel}</span>
+    </template>
+  </lightning-card>
+</template>

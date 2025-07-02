@@ -1,0 +1,10 @@
+{
+	"fields": {
+		"Geolocation__Longitude__s": {
+			"value": 1234
+		},
+		"Geolocation__Latitude__s": {
+			"value": 1456
+		}
+	}
+}
