@@ -1,0 +1,7 @@
+const TILE_WRAPPER_SELECTED_CLASS = 'tile-wrapper selected';
+const TILE_WRAPPER_UNSELECTED_CLASS = 'tile-wrapper'
+
+export {
+    TILE_WRAPPER_SELECTED_CLASS,
+    TILE_WRAPPER_UNSELECTED_CLASS
+}

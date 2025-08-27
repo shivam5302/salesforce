@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`c-boat-search-results Should render the boats When gallery tab is active 1`] = `
+<c-boat-search-results>
+  #shadow-root(open)
+    <lightning-card>
+      #shadow-root(open)
+        <slot />
+        <slot
+          name="actions"
+        />
+        <slot
+          name="footer"
+        />
+        <slot
+          name="title"
+        />
+      <lightning-tabset>
+        #shadow-root(open)
+          <slot />
+        <lightning-tab
+          class="gallery"
+        >
+          #shadow-root(open)
+            <slot />
+          <div
+            class="slds-scrollable_y"
+          >
+            <lightning-layout
+              class="slds-wrap"
+            >
+              #shadow-root(open)
+                <slot />
+              <lightning-layout-item
+                class="slds-p-around_small slds-size_1-of-4"
+              >
+                #shadow-root(open)
+                  <slot />
+                <c-boat-tile>
+                  #shadow-root(open)
+                </c-boat-tile>
+              </lightning-layout-item>
+            </lightning-layout>
+          </div>
+        </lightning-tab>
+        <lightning-tab
+          class="editor"
+        >
+          #shadow-root(open)
+            <slot />
+          <lightning-datatable>
+            #shadow-root(open)
+          </lightning-datatable>
+        </lightning-tab>
+        <lightning-tab
+          class="nearme"
+        >
+          #shadow-root(open)
+            <slot />
+          <c-boats-near-me>
+            #shadow-root(open)
+          </c-boats-near-me>
+        </lightning-tab>
+      </lightning-tabset>
+    </lightning-card>
+</c-boat-search-results>
+`;

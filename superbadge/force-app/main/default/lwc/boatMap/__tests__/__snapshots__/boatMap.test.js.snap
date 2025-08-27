@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`c-boat-map Should show label no boat selected 1`] = `
+<c-boat-map>
+  #shadow-root(open)
+    <lightning-card>
+      #shadow-root(open)
+        <slot />
+        <slot
+          name="actions"
+        />
+        <slot
+          name="footer"
+        />
+        <slot
+          name="title"
+        />
+      <span
+        class="slds-align_absolute-center"
+      >
+        Please select a boat to see its location!
+      </span>
+    </lightning-card>
+</c-boat-map>
+`;
+
+exports[`c-boat-map Wire Should return error 1`] = `
+<c-boat-map>
+  #shadow-root(open)
+    <lightning-card>
+      #shadow-root(open)
+        <slot />
+        <slot
+          name="actions"
+        />
+        <slot
+          name="footer"
+        />
+        <slot
+          name="title"
+        />
+      <div
+        class="slds-theme_error"
+      >
+        <lightning-icon>
+          #shadow-root(open)
+        </lightning-icon>
+        <span
+          class="slds-p-left_xx-small"
+        >
+          Some error message
+        </span>
+      </div>
+    </lightning-card>
+</c-boat-map>
+`;
+
+exports[`c-boat-map Wire Should show locations on map 1`] = `
+<c-boat-map>
+  #shadow-root(open)
+    <lightning-card>
+      #shadow-root(open)
+        <slot />
+        <slot
+          name="actions"
+        />
+        <slot
+          name="footer"
+        />
+        <slot
+          name="title"
+        />
+      <lightning-map>
+        #shadow-root(open)
+      </lightning-map>
+    </lightning-card>
+</c-boat-map>
+`;

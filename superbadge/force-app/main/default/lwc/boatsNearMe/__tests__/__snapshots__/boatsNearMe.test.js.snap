@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`c-boats-near-me Should render the spinner 1`] = `
+<c-boats-near-me>
+  #shadow-root(open)
+    <lightning-card
+      class="slds-is-relative"
+    >
+      #shadow-root(open)
+        <slot />
+        <slot
+          name="actions"
+        />
+        <slot
+          name="footer"
+        />
+        <slot
+          name="title"
+        />
+      <lightning-spinner>
+        #shadow-root(open)
+      </lightning-spinner>
+      <div
+        slot="footer"
+      >
+        Top 10 Only!
+      </div>
+    </lightning-card>
+</c-boats-near-me>
+`;

@@ -1,0 +1,28 @@
+<template>
+	<lightning-card>
+	<lightning-tabset>
+		<lightning-tab label="Gallery" class="gallery">
+			<div class="slds-scrollable_y" lwc:if={boats}>
+				<lightning-layout multiple-rows class="slds-wrap">
+					<template for:each={boats} for:item="item" for:index="index">
+						<lightning-layout-item key={item.Id} class="slds-p-around_small slds-size_1-of-4">
+							<c-boat-tile onboatselect={updateSelectedTile} boat={item}></c-boat-tile>
+						</lightning-layout-item>
+					</template>
+				</lightning-layout>
+			</div>
+		</lightning-tab>
+		<lightning-tab label="Boat Editor" value="edit" class="editor">
+			<lightning-datatable
+				key-field="Id"
+				data={boats}
+				columns={columns}
+				onsave={handleSave}
+			></lightning-datatable>
+		</lightning-tab>
+		<lightning-tab label="Boats Near Me" class="nearme">
+			<c-boats-near-me boat-type-id={selectedBoatTypeId}></c-boats-near-me>
+		</lightning-tab>
+	</lightning-tabset>
+	</lightning-card>
+</template>
